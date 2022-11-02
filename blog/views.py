@@ -205,7 +205,7 @@ def signout(request):
         else:
             return HttpResponse(status=401)
     else:
-        return HttpResponseNotAllowed(['POST'])
+        return HttpResponseNotAllowed(['GET'])
 
 
 @ensure_csrf_cookie
